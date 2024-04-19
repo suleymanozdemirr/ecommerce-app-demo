@@ -1,19 +1,11 @@
-import Slider from "react-slick"
-const Home = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
+import SliderHome from "../components/SliderHome"
 
-  const slideData = [
-    {
-      
-    }
-  ]
-  return <div>Home</div>
+const Home = () => {
+  return (
+    <div>
+      <SliderHome />
+    </div>
+  )
 }
 
 export default Home

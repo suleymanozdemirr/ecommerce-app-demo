@@ -47,7 +47,7 @@ const Header = () => {
         </div>
 
         {/* order button */}
-        <div className="sm:flex items-center gap-4 hidden">
+        <div className="md:flex items-center gap-4 hidden">
           <div className="bg-black py-3 px-6 rounded-2xl text-white flex items-center gap-3">
             <FaUser className="text-xl text-white cursor-pointer" />
           </div>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
 
         {/* mobile menu */}
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <button onClick={toggleMenu}>
             {isMenuOpen ? (
               <FaTimes className="w-5 h-5 text-Black" />
@@ -72,7 +72,7 @@ const Header = () => {
 
       {/* category items */}
       <div className="flex justify-center py-4">
-        <ul className="lg:flex hidden items-center gap-10">
+        <ul className="lg:flex md:flex hidden items-center gap-8">
           {navItems.map((data) => (
             <li key={data.id} className="hover:text-white">
               <Link to={data.link}>{data.title}</Link>

@@ -3,15 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: "576px",
+      sm: "640px",
       md: "768px",
-      lg: "992px",
+      lg: "1024px",
       xl: "1280px",
     },
     extend: {
       fontFamily: {
         poppins: "'Poppins', sans-serif",
         roboto: "'Roboto', sans-serif",
+      },
+      container: {
+        center: true,
+        padding: "20px",
       },
       colors: {
         Black: "#1E2832",
